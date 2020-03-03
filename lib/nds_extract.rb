@@ -5,17 +5,16 @@ require 'directors_database'
 # using director_data as input
 def gross_for_director(director_data)
   row_index = 0
-  print_string = ""
-  while row_index < directors_database.length do
-    if row_index == 0
+    while row_index < nds.length do
       column_index = 0
-      while column_index < directors_database[row_index][:movies].length do
-        puts directors_database[row_index][:movies][column_index][:title]
+      grand_total = 0
+      while column_index < nds[row_index][:movies].length do
+        grand_total += nds[row_index][:movies][column_index][:worldwide_gross]
         column_index += 1
       end
+      row_index += 1
     end
-    row_index += 1
-  end
+    return grand_total
 end
 
 # Write a method that, given an NDS creates a new Hash
