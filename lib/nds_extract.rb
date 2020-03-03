@@ -24,7 +24,6 @@ def directors_totals(nds)
   row_index = 0
   grand_total = 0
    while row_index < nds.length do
-     #puts gross_for_director(nds)
      gross_for_director(nds)
      key = nds[row_index][:name]
      result[key] = grand_total
