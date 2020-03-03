@@ -34,6 +34,13 @@ grand_total = 0
 def directors_totals(nds)
   result = {}
   pp nds
+  row_index = 0
+  puts nds.length
+  while row_index < nds.length do
+    result << gross_for_director(nds)
+
+    row_index +=1
+  end
   result << gross_for_director(nds)
   puts result
   result
