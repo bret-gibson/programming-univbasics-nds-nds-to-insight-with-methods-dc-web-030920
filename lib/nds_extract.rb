@@ -6,6 +6,7 @@ require 'pp'
 # using director_data as input
 
 def gross_for_director(director_data)
+  pp director_data
   column_index = 0
   grand_total = 0;
   while column_index < director_data[:movies].length do
@@ -36,7 +37,7 @@ def directors_totals(nds)
   pp nds
   row_index = 0
   puts nds.length
-  while row_index < nds.length do
+  while row_index < nds[].length do
     result << gross_for_director(nds)
     row_index +=1
   end
