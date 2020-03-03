@@ -30,7 +30,7 @@ grand_total = 0
    row_index += 1
  end
 =end
- 
+
 def directors_totals(nds)
   result = {}
   pp nds
