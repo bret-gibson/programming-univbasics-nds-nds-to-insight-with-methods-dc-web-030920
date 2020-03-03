@@ -1,10 +1,12 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
+require 'pp'
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 def gross_for_director(director_data)
   row_index = 0
+  pp director_data
     while row_index < director_data.length do
       grand_total = 0
       column_index = 0
