@@ -37,7 +37,7 @@ def directors_totals(nds)
   pp nds
   row_index = 0
   puts nds.length
-  while row_index < nds[].length do
+  while row_index < nds.length do
     result << gross_for_director(nds[row_index][:name])
     row_index +=1
   end
