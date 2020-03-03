@@ -22,9 +22,9 @@ end
 def directors_totals(nds)
   result = {}
   row_index = 0
+  grand_total = 0
    while row_index < nds.length do
      column_index = 0
-     grand_total = 0
      grand_total += gross_for_director(nds)
      key = nds[row_index][:name]
      result[key] = grand_total
