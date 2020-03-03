@@ -21,6 +21,7 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {}
+  pp nds
   row_index = 0
   grand_total = 0
    while row_index < nds.length do
