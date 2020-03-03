@@ -28,7 +28,7 @@ def directors_totals(nds)
      grand_total = 0
      while column_index < nds[row_index][:movies].length do
        puts gross_for_director(nds)
-       grand_total += gross_for_director(nds)
+       #grand_total += gross_for_director(nds)
        column_index += 1
      end
      key = nds[row_index][:name]
