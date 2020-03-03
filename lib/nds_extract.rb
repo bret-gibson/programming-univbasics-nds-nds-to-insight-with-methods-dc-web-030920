@@ -12,6 +12,7 @@ def gross_for_director(director_data)
         grand_total += director_data[row_index][:movies][column_index][:worldwide_gross]
         column_index += 1
       end
+      puts grand_total
       row_index += 1
     end
     return grand_total
