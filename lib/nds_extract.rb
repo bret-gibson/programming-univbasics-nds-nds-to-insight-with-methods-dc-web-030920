@@ -40,7 +40,6 @@ def directors_totals(nds)
     result << gross_for_director(nds)
     row_index +=1
   end
-  result << gross_for_director(nds)
   puts result
   result
 end
