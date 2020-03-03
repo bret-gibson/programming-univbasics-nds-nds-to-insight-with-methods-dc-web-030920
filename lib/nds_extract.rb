@@ -8,6 +8,7 @@ def gross_for_director(director_data)
   column_index = 0
   pp director_data
   while column_index < director_data[:movies].length do
+    puts director_data[:movies].length
     grand_total += director_data[:movies][column_index][:worldwide_gross]
     column_index += 1
   end
