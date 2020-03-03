@@ -34,7 +34,6 @@ grand_total = 0
 
 def directors_totals(nds)
   result = {}
-  pp nds
   row_index = 0
   while row_index < nds.length do
     key = nds[row_index][:name]
