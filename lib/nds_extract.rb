@@ -39,7 +39,7 @@ def directors_totals(nds)
   puts nds.length
   while row_index < nds.length do
     key = nds[row_index][:name]
-    result gross_for_director(nds[row_index][:name])
+    result[key] =  gross_for_director(nds[row_index][:name])
     row_index +=1
   end
   puts result
