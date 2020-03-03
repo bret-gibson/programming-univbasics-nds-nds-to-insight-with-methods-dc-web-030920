@@ -5,11 +5,6 @@ require 'pp'
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 
-def director_total(director_data, column_index)
-
-end
-
-
 def gross_for_director(director_data)
   column_index = 0
   pp director_data
@@ -32,6 +27,7 @@ def directors_totals(nds)
      column_index = 0
      grand_total = 0
      while column_index < nds[row_index][:movies].length do
+       puts gross_for_director(nds)
        grand_total += gross_for_director(nds)
        column_index += 1
      end
